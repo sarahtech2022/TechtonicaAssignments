@@ -2,7 +2,7 @@ body{
     background: maroon;
 }
 .recipe-image{
-    background: darkolivegreen;
+    background: rgb(43, 61, 11);
 
 }
 .center {
@@ -18,4 +18,9 @@ body{
   margin-right: auto;
   width: 30%;
   text-align: center;
+}
+
+ul {
+    text-align: center;
+    list-style-position: inside;
 }
