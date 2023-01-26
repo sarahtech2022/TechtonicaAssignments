@@ -40,6 +40,36 @@ greenDiv.addEventListener("mouseout", ()=>{
     greenDiv.classList.remove("colorchange"); //This makes sure that recipe-image and colorchange dont compete, and that we keep the original dark green color from the recipe-image class
 })
 
+let myButton = document.getElementById("toggleTiktokVideo");
+myButton.addEventListener("click", ()=> {
+    const tiktokEmbedDiv = document.getElementById('tiktokembed');
+if (tiktokEmbedDiv.style.display === "none") {
+    tiktokEmbedDiv.style.display = "block";
+    } else {
+        tiktokEmbedDiv.style.display = "none";
+    }
+});
+
+
+//My WORK: trouble hiding and making video to appear, reason: need to put the if statement which is toggling between the two different style of none and block inside
+// of the event listener!
+//(Not needed because will occur inside event listener i think?) Here I am hiding my video by default so once the person clicks the link they can watch the video:
+//document.getElementById("tiktokembed").style.display = "none";
+//Here I am manipulating my button, that I gave ID called videobutton! Next I will add an eventlistener function which fires when the user clicks the button
+// let myButton = document.getElementById("toggleTiktokVideo");
+// myButton.addEventListener("click", ()=> {
+//     const tiktokEmbedDiv = document.getElementById('tiktokembed') 
+// });
+// //(This if statement needs to go INSIDE of the event listener! Here I will tell my video to appear if the event listern occurs, and be hidden by default
+// function myFunction() {
+//     tiktokEmbedDiv = document.getElementById("tiktokembed");
+//     if (tiktokEmbedDiv.style.display === "none") {
+//         tiktokEmbedDiv.style.display = "block";
+//     } else {
+//         tiktokEmbedDiv.style.display = "none";
+//     }
+//   }
+
 
 
 //callback is a function, needs to be second argument
