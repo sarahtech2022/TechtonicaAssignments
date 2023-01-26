@@ -1,7 +1,7 @@
 const otherRecipes = ["https://www.nytimes.com", "https://www.washingtonpost.com", "http://www.economist.com"];
 
 
-id="recipelinks"
+
 function showList(array){
   const myDiv = document.getElementById("recipelinks");
   const myList = document.createElement("ol"); //creating the ol element
@@ -20,3 +20,29 @@ function showList(array){
 
 showList(otherRecipes);
 // You dont always need to return a function!
+
+
+
+//Here I will create an event listener called mouse over, that changes the div color when a user hovers over the dive where the recipe image is!
+//create a variable to store DOM element (greenDiv) 
+//Call add event listener on that element we made (which will be mouse over)
+//That will give us a call back, and in the callback we do our logic 
+
+
+// new class .colorchange
+let greenDiv= document.getElementById("specialdiv") //Will return a list of all the elements that have that class name
+greenDiv.addEventListener("mouseover", ()=>{
+    greenDiv.classList.add("colorchange") //What i want to happen here, change to light green
+}) // On the green Div that we created, add an event listener
+
+greenDiv.addEventListener("mouseout", ()=>{
+    //greenDiv.classList.add("recipe-image") This is not needed because we never removed recipe-image!
+    greenDiv.classList.remove("colorchange"); //This makes sure that recipe-image and colorchange dont compete, and that we keep the original dark green color from the recipe-image class
+})
+
+
+
+//callback is a function, needs to be second argument
+
+
+
