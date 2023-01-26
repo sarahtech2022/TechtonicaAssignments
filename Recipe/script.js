@@ -1,4 +1,4 @@
-const otherRecipes = ["https://www.nytimes.com", "https://www.washingtonpost.com", "http://www.economist.com"];
+const otherRecipes = ["https://lubnabenhalim.ly/magrood/", "https://thebitterolive.com/libyan-soup/", "https://deliciouslymediterranean.com/authentic-shakshuka/"];
 
 
 
