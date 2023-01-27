@@ -31,3 +31,19 @@ ul {
 }
 
 
+@media (max-width: 1080px) {
+  img {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1081px) {
+  body {
+    background-color: rgb(255, 255, 255);
+  }
+}
+@media (min-width: 1200px) {
+  body {
+    background-color: rgb(209, 142, 194);
+  }
+}
