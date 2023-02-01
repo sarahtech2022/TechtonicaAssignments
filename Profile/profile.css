@@ -1,8 +1,6 @@
 #container1{
     display: flex; /* This sets up flexbox for us on the big div container that holds our 3 boxes */
-    
     justify-content: space-around;
-    
     
 }
 
@@ -10,7 +8,6 @@
     border: 2px rgb(0, 0, 0) solid;  /* did a border aroound our container div so we can see it  */
     padding: 10px
     
-
 }
 
 
@@ -41,4 +38,15 @@ img {
   }
 
 
+  #container2{
+    display: flex; 
+    justify-content: space-around;
+    
+}
 
+#container2 div{
+    border: 2px rgb(0, 0, 0) solid; 
+    padding: 10px
+   
+    
+}
