@@ -1,0 +1,35 @@
+#container1{
+    display: flex; /* This sets up flexbox for us on the big div container that holds our 3 boxes */
+    flex-basis: 75%
+    justify-content: space-around;
+    
+    
+}
+
+#container1 div{
+    border: 2px rgb(0, 0, 0) solid;  /* did a border aroound our container div so we can see it  */
+    padding: 10px
+    
+
+}
+
+
+#divname{
+    flex: 1; /* this tells css that we want 3 even boxes.  */
+    
+}
+
+#divpic{
+    flex: 1;
+   
+}
+
+#divlang{
+    flex: 1;
+  
+}
+
+
+
+
+
