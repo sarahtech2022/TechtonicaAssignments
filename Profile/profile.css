@@ -7,10 +7,11 @@
 #container1 div{
     border: 2px rgb(171, 171, 171) solid;  /* did a border aroound our container div so we can see it  */
     padding: 40px;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     box-shadow: 20px 20px 20px 11px rgb(210 132 214);
     border-radius: 65px;
-    width:20%
+    width:20%;
+    text-align:center
     
 }
 
@@ -77,12 +78,15 @@ body {
    }
 
 
-label, input {  /* This is used to fix my input labels so they go above the input field */
+ input {  /* This is used to fix my input labels so they go above the input field */
     display: block;
+    padding-bottom: 10px;
+    
 }
 
 label {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
+    
 }
 
 i {
