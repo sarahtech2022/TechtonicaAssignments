@@ -66,6 +66,11 @@ img {
 }
 
 
+#bottommiddlediv {
+   text-align: center;
+}
+
+
 body {
     background-image: url("https://images.pexels.com/photos/7130560/pexels-photo-7130560.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
     background-color: #cccccc;
@@ -78,4 +83,8 @@ label, input {  /* This is used to fix my input labels so they go above the inpu
 
 label {
     margin-bottom: 20px;
+}
+
+i {
+    font-size: 40px;
 }
