@@ -106,8 +106,14 @@ h3 {
 
 h2{
     background: linear-gradient(to bottom left, #6951a9, #d56ec3);
+    font-family: Chakra Petch;
+    font-size: 42px;
 }
 
+
+.paragraph{
+     font-size: 19px;
+}
 
 #bottommiddlediv {
    /* margin-top: -65px; */
