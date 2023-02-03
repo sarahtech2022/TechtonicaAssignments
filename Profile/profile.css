@@ -36,11 +36,19 @@
 
 
 
-  #recipe1pic {
+  #recipe1pic, #recipe2pic {
     width:150px; 
     height:150px;
+    -webkit-filter: grayscale(110%); 
+    filter: grayscale(110%);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display:block;
     
   }
+
+
+  
 
 
   #container2{
