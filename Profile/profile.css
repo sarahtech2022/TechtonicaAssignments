@@ -4,7 +4,7 @@
   
 }
 
-#container1 div{
+#divname, #divlang{
     border: 2px rgb(171, 171, 171) solid;  /* did a border aroound our container div so we can see it  */
     padding: 40px;
     background-color: rgb(255, 255, 255);
@@ -16,30 +16,22 @@
 }
 
 
-#divname{
-    
-    
-}
-
 #divpic{
    
-   
+    
 }
 
-#divlang{
-   
-  
-}
 
 
 
 img {
     border-radius: 50%;
-    width:10em; 
-    height:10em;
+    width:12em; 
+    height:12em;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    box-shadow: 20px 20px 20px 11px rgb(210 132 214);
   }
 
 
@@ -79,8 +71,8 @@ body {
 
 
  input {  /* This is used to fix my input labels so they go above the input field */
-    display: block;
-    padding-bottom: 10px;
+    
+    padding-bottom: 5px;
     
 }
 
@@ -90,5 +82,37 @@ label {
 }
 
 i {
-    font-size: 40px;
+    font-size: 60px;
+}
+
+
+#submitbutton{
+    margin-top: 20px;
+    background-color: rgb(178, 145, 208);
+  
+    
+}
+
+h3 {
+    text-align: center;
+    /* margin-top: -240px; */
+}
+
+#bottommiddlediv {
+   /* margin-top: -65px; */
+}
+
+
+#container3{
+    display: flex; 
+    justify-content: space-evenly
+  
+}
+
+
+#container3 div{
+    padding: 40px;
+    width:20%;
+    text-align:center
+    
 }
