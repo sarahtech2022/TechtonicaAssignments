@@ -44,16 +44,15 @@
     margin-top: 20px;
     margin-bottom: 20px;
     display:block;
+    padding: 20px;
     
   }
 
 
-  
 
 
   #container2{
-    display: flex; 
-    justify-content: space-around;
+    /* justify-content: space-around; */
     border: 2px rgb(171, 171, 171) solid;
     padding: 60px;
     background-color: white;
@@ -66,12 +65,12 @@
     /* padding-left: 10px; */
     /* padding-right: 10px; */
     
+    
 }
 
 #container2 div{
-    border: 2px rgb(0, 0, 0) solid; 
     padding: 10px
-   
+    
     
 }
 
@@ -130,6 +129,12 @@ h2{
 }
 
 
+#divtitle{
+    
+    padding-right: 100px;
+}
+
+
 .paragraph{
      font-size: 19px;
 }
@@ -159,4 +164,10 @@ h2{
 
 .move2{
     padding-left: 15px;
+}
+
+
+#divpics{
+    display: flex; 
+    justify-content: center;
 }
