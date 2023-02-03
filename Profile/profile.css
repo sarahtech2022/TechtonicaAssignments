@@ -47,7 +47,8 @@ img {
     width: 75%;
     margin-left: auto;
     margin-right: auto;
-
+    /* padding-left: 10px; */
+    /* padding-right: 10px; */
     
 }
 
@@ -108,6 +109,8 @@ h2{
     background: linear-gradient(to bottom left, #6951a9, #d56ec3);
     font-family: Chakra Petch;
     font-size: 42px;
+    padding-left: 12px;
+    padding-right: 12px;
 }
 
 
