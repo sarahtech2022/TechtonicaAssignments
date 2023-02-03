@@ -96,12 +96,18 @@ i {
 h3 {
     text-align: center;
     /* margin-top: -240px; */
-    background: linear-gradient(to bottom left, #553c9a, #d56ec3);
+    background: linear-gradient(to bottom left, #6951a9, #d56ec3);
 
     
     
 
 }
+
+
+h2{
+    background: linear-gradient(to bottom left, #6951a9, #d56ec3);
+}
+
 
 #bottommiddlediv {
    /* margin-top: -65px; */
