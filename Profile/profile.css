@@ -24,7 +24,7 @@
 
 
 
-img {
+#mypic {
     border-radius: 50%;
     width:12em; 
     height:12em;
@@ -32,6 +32,14 @@ img {
     margin-left: auto;
     margin-right: auto;
     box-shadow: 20px 20px 20px 11px rgb(210 132 214);
+  }
+
+
+
+  #recipe1pic {
+    width:150px; 
+    height:150px;
+    
   }
 
 
