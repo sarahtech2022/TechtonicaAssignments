@@ -1,1 +1,2 @@
-//1. function result() that will return random head or tail
+let flipButton = document.querySelector(“#flipbutton”);
+let resetButton = document.querySelector(“#resetbutton”);
