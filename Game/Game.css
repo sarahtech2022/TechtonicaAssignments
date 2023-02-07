@@ -6,3 +6,11 @@
  width: 300px;
  height: 70px
 }
+
+#flipbuttondiv{
+    display: inline-block;
+}
+
+#resetbuttondiv{
+    display: inline-block;
+}
