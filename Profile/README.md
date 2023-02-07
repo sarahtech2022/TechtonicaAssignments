@@ -1,0 +1,1 @@
+//Welcome to my profile page! On here you will find information about me! This includes a small about me, list of the language I know and am currently learning, a contact form, my social media links, and lastly my contact info. 

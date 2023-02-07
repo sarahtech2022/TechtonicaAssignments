@@ -1,0 +1,174 @@
+#container1{
+    display: flex; /* This sets up flexbox for us on the big div container that holds our 3 boxes */
+    justify-content: space-evenly
+  
+}
+
+#divname, #divlang{
+    border: 2px rgb(171, 171, 171) solid;  /* did a border aroound our container div so we can see it  */
+    padding: 40px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 20px 20px 20px 11px rgb(210 132 214);
+    border-radius: 65px;
+    width:20%;
+    text-align:center
+    
+}
+
+
+#divpic{
+   
+    
+}
+
+
+
+
+#mypic {
+    border-radius: 50%;
+    width:13em; 
+    height:13em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 20px 20px 20px 11px rgb(210 132 214);
+  }
+
+
+
+  #recipe1pic, #recipe2pic {
+    width:150px; 
+    height:150px;
+    -webkit-filter: grayscale(110%); 
+    filter: grayscale(110%);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display:block;
+    padding: 20px;
+    
+  }
+
+
+
+
+  #container2{
+    /* justify-content: space-around; */
+    border: 2px rgb(171, 171, 171) solid;
+    padding: 60px;
+    background-color: white;
+    box-shadow: 20px 20px 20px 11px rgb(210 132 214);
+    border-radius: 65px;
+    margin-top: 45px;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    /* padding-left: 10px; */
+    /* padding-right: 10px; */
+    
+    
+}
+
+#container2 div{
+    padding: 10px
+    
+    
+}
+
+
+#bottommiddlediv {
+   text-align: center;
+}
+
+
+body {
+    background-image: url("https://images.pexels.com/photos/7130560/pexels-photo-7130560.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    background-color: #cccccc;
+   }
+
+
+ input {  /* This is used to fix my input labels so they go above the input field */
+    
+    padding-bottom: 5px;
+    
+}
+
+label {
+    margin-bottom: 25px;
+    
+}
+
+i {
+    font-size: 60px;
+}
+
+
+#submitbutton{
+    margin-top: 20px;
+    background-color: rgb(178, 145, 208);
+  
+    
+}
+
+h3 {
+    text-align: center;
+    /* margin-top: -240px; */
+    background: linear-gradient(to bottom left, #6951a9, #d56ec3);
+
+    
+    
+
+}
+
+
+h2{
+    background: linear-gradient(to bottom left, #6951a9, #d56ec3);
+    font-family: Chakra Petch;
+    font-size: 42px;
+    padding-left: 12px;
+    padding-right: 12px;
+    border-radius: 10px;
+}
+
+
+#divtitle{
+    
+    padding-right: 100px;
+}
+
+
+.paragraph{
+     font-size: 19px;
+}
+
+#bottommiddlediv {
+   /* margin-top: -65px; */
+}
+
+
+#container3{
+    display: flex; 
+    justify-content: space-evenly
+  
+}
+
+
+#container3 div{
+    padding: 40px;
+    width:20%;
+    text-align:center
+    
+}
+
+.move{
+    padding-left: 18px;
+}
+
+.move2{
+    padding-left: 15px;
+}
+
+
+#divpics{
+    display: flex; 
+    justify-content: center;
+}
