@@ -1,0 +1,1 @@
+//1. function result() that will return random head or tail
