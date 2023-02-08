@@ -14,3 +14,10 @@
 #resetbuttondiv{
     display: inline-block;
 }
+
+#resultdiv{
+    border-style:solid;
+    border-color: black;
+    width: 300px;
+    height: 70px
+   }
