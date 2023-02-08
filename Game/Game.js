@@ -33,16 +33,16 @@ flipbutton.addEventListener('click', () => {
 });
 
 //3. Third, iterate over the radio buttons and get the value of the selected radio button:
-let selectedSize;
+let selectedRadioButton;
 for (const radioButton of radioButtons) {
   if (radioButton.checked) {
-    selectedSize = radioButton.value;
+    selectedRadioButton = radioButton.value;
     break;
   }
 }
 
 //4. Finally set the message for the output element:
-output.innerText = selectedSize ? `You selected ${selectedSize}` : `You haven't selected any size`;
+resultdiv.innerText = selectedRadioButton ? `You selected ${selectedRadioButton}` : `You haven't selected any button`;
 
 
 // if(document.getElementById('heads').checked == true) {   
