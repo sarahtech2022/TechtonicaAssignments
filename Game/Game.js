@@ -49,8 +49,10 @@ for (const radioButton of radioButtons) {
 let winOrLose= document.getElementById('resultdiv')
 if (selectedRadioButton === randomHorT){
     winOrLose.innerText= `You got ${selectedRadioButton} and you won!`
+    winOrLose.style.backgroundColor= 'red'
 }else{
     winOrLose.innerText= `You got ${selectedRadioButton} and you lost!`
+    winOrLose.style.backgroundColor= 'green'
 }
 
 });
