@@ -1,11 +1,18 @@
 
-body {background-color: rgb(173, 222, 165);}
+body {background-color: rgb(187, 213, 221);}
 
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%
+  }
 
 
 #coinpic{
-    width: 40%;
-    height: 50%
+    width: 35%;
+    height: 30%;
+    justify-content: center;
+    
 }
 
 #flipbuttondiv{

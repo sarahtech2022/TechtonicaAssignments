@@ -57,7 +57,15 @@ if (selectedRadioButton === randomHorT){
 
 });
 
-
+let winOrLose= document.getElementById('resultdiv')
+resetbutton.addEventListener("click", resetChoice);
+function resetChoice(){
+  for(i=0; i< radioButtons.length; i++){
+    radioButtons[i].checked = false;
+    winOrLose.style.backgroundColor = "";
+    winOrLose.innerHTML= "";
+  }
+}
 
 
 
