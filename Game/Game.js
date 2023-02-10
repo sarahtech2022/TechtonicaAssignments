@@ -1,6 +1,6 @@
 let flipButton = document.querySelector("#flipbutton");
 let resetButton = document.querySelector("#resetbutton");
-console.log("hi")
+
 let heads = 0;
 let tails = 0;
 // This is saying immediatey disable the button, then 5 seconds later re-enable it, (milliseconds)
@@ -49,10 +49,10 @@ for (const radioButton of radioButtons) {
 let winOrLose= document.getElementById('resultdiv')
 if (selectedRadioButton === randomHorT){
     winOrLose.innerText= `You got ${selectedRadioButton} and you won!`
-    winOrLose.style.backgroundColor= 'red'
+    winOrLose.style.backgroundColor= 'green'
 }else{
     winOrLose.innerText= `You got ${selectedRadioButton} and you lost!`
-    winOrLose.style.backgroundColor= 'green'
+    winOrLose.style.backgroundColor= 'red'
 }
 
 });
