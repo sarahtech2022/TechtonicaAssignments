@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game</title>
+  <link rel="stylesheet" href="Game.css">
+</head>
+
+<body>
+  <div id="mainDiv">
+    <!-- Title Div section-->
+    <div id="gamediv" class="center">
+      <h1 id="titleText" class="glitch"><span aria-hidden="true">Coin Flip Game</span><span aria-hidden="true">Coin Flip
+          Game</span><span aria-hidden="true">Coin Flip Game</span></h1>
+    </div> <br>
+
+    <!-- Container Div section-->
+    <div id="container1">
+
+      <!-- inside container: picture-->
+      <div id="picdiv" class="center">
+        <img id="coinpic"
+          src="https://media.istockphoto.com/id/547201522/vector/coin-flip.jpg?s=612x612&w=0&k=20&c=sCv-hxguTL2LhoQAPQM_B3VveI3e2h8L_R0u8nAENlU=">
+      </div>
+
+      <!-- inside container: guess input -->
+      <h4 class="center">GUESS - Heads or Tail?</h4>
+      <div id="guessinputdiv" class="center">
+        <label for="heads" class="center">Heads</label>
+        <input id="heads" type="radio" name="radioOption" value="heads">
+
+        <label for="tails" class="center">Tails</label>
+        <input id="tails" type="radio" name="radioOption" value="tails">
+      </div>
+
+
+
+      <div id="buttonsDiv">
+        <!-- inside container: flip coin button -->
+        <div id="flipbuttondiv" class="center">
+          <button id="flipbutton" type="button">Flip Coin!</button>
+        </div> <br>
+
+        <!-- inside container: reset button -->
+        <div id="resetbuttondiv" class="center">
+          <button id="resetbutton" type="button">Reset!</button>
+        </div> <br>
+
+        <!-- inside container: result-->
+        <div id="resultdiv" class="center">
+        </div>
+
+      </div> <br>
+
+
+
+
+
+
+    </div>
+  </div>
+  <script src="Game.js"></script>
+</body>
+
+</html>
