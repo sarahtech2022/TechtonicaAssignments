@@ -1,31 +1,51 @@
-
-body {background-color: rgb(187, 213, 221);}
-
-.center {
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%
+body {
+    background-color: rgb(187, 213, 221);
   }
-
-
-#coinpic{
-    width: 35%;
-    height: 30%;
-    justify-content: center;
-    
-}
-
-#flipbuttondiv{
-    display: inline-block;
-}
-
-#resetbuttondiv{
-    display: inline-block;
-}
-
-#resultdiv{
-    border-style:solid;
-    border-color: black;
-    width: 300px;
-    height: 70px
-   }
+  
+  #mainDiv {
+      display: flex;
+      flex-direction: column;
+      margin-top: 50px;
+      justify-content: center;
+  }
+  
+  #gamediv {
+    align-items: center;
+    text-align: center;
+  }
+  
+  .center {
+      align-items: center;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%
+    }
+  
+  
+  #coinpic{
+      width: 35%;
+      height: 30%;
+      justify-content: center;
+      
+  }
+  
+  #flipbuttondiv{
+      display: inline-block;
+  }
+  
+  #resetbuttondiv{
+      display: inline-block;
+  }
+  
+  #resultdiv{
+      border-style:solid;
+      border-color: black;
+      width: 300px;
+      height: 70px
+     }
+  
+  #buttonsDiv {
+    align-items: center;
+    text-align: center;
+  }
