@@ -1,7 +1,10 @@
+import './Card.css' 
+
+
 function Card(){
     return(
-    <div>
-    <div>Card </div>
+    <div className="cardcontainer">
+    <div className="carddiv">Card </div> 
     </div>
     )
 }; 

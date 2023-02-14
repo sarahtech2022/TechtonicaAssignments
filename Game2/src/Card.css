@@ -1,0 +1,13 @@
+.carddiv{
+    
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+    padding: 80px;   
+    margin: 35%; 
+    
+}
+
+.cardcontainer{
+    width: 25%;
+}

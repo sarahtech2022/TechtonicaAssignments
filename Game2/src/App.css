@@ -36,3 +36,13 @@
     transform: rotate(360deg);
   }
 }
+
+
+#mainAppDiv{
+  display: flex;
+  justify-content: center;
+  /* flex wrap will cause any elements inside a flexbox to wrap around rather than squich together */
+  flex-wrap: wrap;
+  /* border-left: 50px;
+  border-right: 50px; */
+}
