@@ -8,7 +8,6 @@ const arrayOfPics = ["https://static.thenounproject.com/png/1142266-200.png",
 "https://static.thenounproject.com/png/1242759-200.png",
 "https://static.thenounproject.com/png/1340537-200.png"];
 
-
 // De-facto unbiased Shuffle Algorithm (Fisher-Yates Shuffle)
 function shuffle(array) {
   let currentIndex = array.length,  randomIndex;
@@ -32,19 +31,29 @@ let shuffledCardsArray = [1,2,3,4,1,2,3,4];
 shuffle(shuffledCardsArray);
 console.log(shuffledCardsArray);
 
+//1= hamburger https://static.thenounproject.com/png/1142266-200.png
+//2= corn https://static.thenounproject.com/png/1235197-200.png
+//3= soup https://static.thenounproject.com/png/1242759-200.png
+//4= movie theatre https://static.thenounproject.com/png/1340537-200.png
+
+
+
+
+
+
 
 function App() {
   return (
     <div id="mainAppDiv" className="App">
       
-      <Card image={arrayOfPics[1]} />
-      <Card image={arrayOfPics[0]}/>
-      <Card image={arrayOfPics[3]}/>
-      <Card image={arrayOfPics[2]} />
-      <Card image={arrayOfPics[1]} />
-      <Card image={arrayOfPics[2]} />
-      <Card image={arrayOfPics[0]}/>
-      <Card image={arrayOfPics[3]}/>
+      <Card cardnumber={shuffledCardsArray[0]} />
+      <Card cardnumber={shuffledCardsArray[1]}/>
+      <Card cardnumber={shuffledCardsArray[2]}/>
+      <Card cardnumber={shuffledCardsArray[3]} />
+      <Card cardnumber={shuffledCardsArray[4]} />
+      <Card cardnumber={shuffledCardsArray[5]} />
+      <Card cardnumber={shuffledCardsArray[6]}/>
+      <Card cardnumber={shuffledCardsArray[7]}/>
 
     </div>
   );
