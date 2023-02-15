@@ -8,16 +8,30 @@ const arrayOfPics = ["https://static.thenounproject.com/png/1142266-200.png",
 "https://static.thenounproject.com/png/1242759-200.png",
 "https://static.thenounproject.com/png/1340537-200.png"];
 
-//Gives me a number 0 to 3. 
-//Give each card a random number, and arrange the cards by
-// 0-7 placement, so each time the card goes in a new place.
-// Return an array with 8 elements, with values 0-3, each number should 
-//be repeated twice and in a random order
 
-onclick = function(){return randomArray Math.floor(Math.random() * 4 );
-};
+// De-facto unbiased Shuffle Algorithm (Fisher-Yates Shuffle)
+function shuffle(array) {
+  let currentIndex = array.length,  randomIndex;
 
-{/* <button onclick="myFunction()">Click me</button> */}
+  // While there remain elements to shuffle.
+  while (currentIndex != 0) {
+
+    // Pick a remaining element.
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex--;
+
+    // And swap it with the current element.
+    [array[currentIndex], array[randomIndex]] = [
+      array[randomIndex], array[currentIndex]];
+  }
+
+  return array;
+}
+// Used like so
+let shuffledCardsArray = [1,2,3,4,1,2,3,4];
+shuffle(shuffledCardsArray);
+console.log(shuffledCardsArray);
+
 
 function App() {
   return (
