@@ -1,10 +1,10 @@
 import './Card.css' 
 
 
-function Card(){
+function Card(props){
     return(
     <div className="cardcontainer">
-    <div className="carddiv">Card </div> 
+    <div className="carddiv"><img className="cardimage" src={props.image}/> </div> 
     </div>
     )
 }; 
