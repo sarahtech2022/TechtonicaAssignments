@@ -1,4 +1,5 @@
 import "./Card.css";
+import { useState } from "react";
 
 // In my prop I am only passing one number, 1-4 (shuffle the array at this instance)
 //1= hamburger https://static.thenounproject.com/png/1142266-200.png
@@ -6,73 +7,40 @@ import "./Card.css";
 //3= soup https://static.thenounproject.com/png/1242759-200.png
 //4= movie theatre https://static.thenounproject.com/png/1340537-200.png
 
-function Card(props) {
-  if (props.cardnumber === 1) {
-    return (
-      <div className="cardcontainer">
-        <div className="carddiv">
-          <img
-            className="cardimage"
-            src="https://static.thenounproject.com/png/1142266-200.png"
-          />{" "}
-        </div>
-      </div>
-    );
-  } else if (props.cardnumber === 2) {
-    return (
-      <div className="cardcontainer">
-        <div className="carddiv">
-          <img
-            className="cardimage"
-            src="https://static.thenounproject.com/png/1235197-200.png"
-          />{" "}
-        </div>
-      </div>
-    );
-  } else if (props.cardnumber === 3) {
-    return (
-      <div className="cardcontainer">
-        <div className="carddiv">
-          <img
-            className="cardimage"
-            src="https://static.thenounproject.com/png/1242759-200.png"
-          />{" "}
-        </div>
-      </div>
-    );
-  } else {
-    return (
-      <div className="cardcontainer">
-        <div className="carddiv">
-          <img
-            className="cardimage"
-            src="https://static.thenounproject.com/png/1340537-200.png"
-          />{" "}
-        </div>
-      </div>
-    );
+// back of card https://i.pinimg.com/736x/8b/d4/6f/8bd46fdd6a80707c24b891437a77e4bf.jpg
+//States cannot be nested inside a function
+
+function getCardImageByNum(cardNum) {
+  if (cardNum === 1) {
+    return "https://static.thenounproject.com/png/1142266-200.png";
+  } else if (cardNum === 2) {
+    return "https://static.thenounproject.com/png/1235197-200.png";
+  } else if (cardNum === 3) {
+    return "https://static.thenounproject.com/png/1242759-200.png";
+  } else if (cardNum === 4) {
+    return "https://static.thenounproject.com/png/1340537-200.png";
   }
 }
 
-function WinMessage(props) {
-  let win = "The winner is Heads!";
-  let lose = "The Winner is Tails!";
-  if (props.coin === 0) {
-    return <p> {win} </p>;
-  } else if (props.coin === 1) {
-    return <text> {lose} </text>;
-  } else {
-    return <p>You have not flipped the coin yet </p>;
-  }
-}
-
+//toggle here to update state for flipped variable and image state
 function Card(props) {
+  const [flipped, setFlipped] = useState(false);
+  function flip() {
+    if (flipped === true) {
+    }
+  }
+
+  //Create a state variable which stores image link (just refrence function to get each link) image state:
+
   return (
-    <div className="cardcontainer">
+    <button onClick={flip} className="cardcontainer">
       <div className="carddiv">
-        <img className="cardimage" src={props.image} />{" "}
+        <img
+          className="cardimage"
+          src={getCardImageByNum(props.cardnumber)} //if you need Javascript logic use curly braces! Otherwise its JSX
+        />{" "}
       </div>
-    </div>
+    </button>
   );
 }
 
