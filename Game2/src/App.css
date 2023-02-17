@@ -48,23 +48,27 @@
   border-right: 50px; */
 }
 
+@import url(https: //fonts.googleapis.com/css2?family=Concert+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
 #title{
   display: block;
   width: 100%;
   margin-top: 50px;
+  margin-bottom: 1px;
   height: 175px;
   float:inline-end;
   color:rgb(84, 57, 104);
-    font-family:"Montserrat",
-      sans-serif;
+    font-family: Staatliches;
+    /* "Montserrat",sans-serif; */
       font-weight: 800;
-      font-size: 8.5vw;
+      font-size: 9.5vw;
     text-shadow: 5px 5px #9e5d9f;
 }
 
 
 
-/* Adjusting font: */
+/* Adjusting title font, credit to: https: //alvarotrigo.com/blog/css-text-animations/ */
 .title-word {
   animation: color-animation 4s linear infinite;
 }
