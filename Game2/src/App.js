@@ -54,7 +54,8 @@ function App() {
   //const [twoCard, setTwoCard] = useState(-1);
   return (
     <div id="mainAppDiv" className="App">
-      <h1 style={{ textAlign: "center" }}>Card Game</h1>
+      <h1 id="title">Card Game</h1>
+
       <Card cardnumber={shuffledCardsArray[0]} />
       <Card cardnumber={shuffledCardsArray[1]} />
       <Card cardnumber={shuffledCardsArray[2]} />
