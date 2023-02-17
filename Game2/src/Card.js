@@ -10,6 +10,7 @@ import { useState } from "react";
 // back of card https://i.pinimg.com/736x/8b/d4/6f/8bd46fdd6a80707c24b891437a77e4bf.jpg
 //States cannot be nested inside a function
 
+//storing my url as a string (thats how im doing it in JS)
 function getCardImageByNum(cardNum) {
   if (cardNum === 1) {
     return "https://static.thenounproject.com/png/1142266-200.png";
@@ -23,21 +24,37 @@ function getCardImageByNum(cardNum) {
 }
 
 //toggle here to update state for flipped variable and image state
+//This function ONLY returns a string, not the actual image.
 function Card(props) {
   const [flipped, setFlipped] = useState(false);
-  function flip() {
+  //Create a function that controls which image to display
+  function getCardImageURL() {
+    let backOfCard =
+      "https://i.pinimg.com/736x/8b/d4/6f/8bd46fdd6a80707c24b891437a77e4bf.jpg";
     if (flipped === true) {
+      return getCardImageByNum(props.cardnumber);
+    } else {
+      return backOfCard;
+    }
+  }
+  // Create a function that controls the flip button
+  //Here i willl use setFlipped which is a function, to replace the state value which is false to true
+  //When click happens, i need to tell the computer to change it from false to true
+  function handleClick() {
+    setFlipped(true); // Should take a single argument, the new value that u want to replace state with
+    if (flipped === true) {
+      setFlipped(false);
+    } else {
+      setFlipped(true);
     }
   }
 
-  //Create a state variable which stores image link (just refrence function to get each link) image state:
-
   return (
-    <button onClick={flip} className="cardcontainer">
+    <button onClick={handleClick} className="cardcontainer">
       <div className="carddiv">
         <img
           className="cardimage"
-          src={getCardImageByNum(props.cardnumber)} //if you need Javascript logic use curly braces! Otherwise its JSX
+          src={getCardImageURL()} //if you need Javascript logic use curly braces! Otherwise its JSX
         />{" "}
       </div>
     </button>
