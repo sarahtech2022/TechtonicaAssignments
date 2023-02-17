@@ -54,7 +54,15 @@ function App() {
   //const [twoCard, setTwoCard] = useState(-1);
   return (
     <div id="mainAppDiv" className="App">
-      <h1 id="title">Card Game</h1>
+      <h1 id="title">
+        <span class="title-word title-word-1">C</span>
+        <span class="title-word title-word-2">A</span>
+        <span class="title-word title-word-3">R</span>
+        <span class="title-word title-word-4">D</span> <span>G</span>
+        <span class="title-word title-word-1">A</span>
+        <span class="title-word title-word-2">M</span>
+        <span class="title-word title-word-3">E</span>
+      </h1>
 
       <Card cardnumber={shuffledCardsArray[0]} />
       <Card cardnumber={shuffledCardsArray[1]} />
