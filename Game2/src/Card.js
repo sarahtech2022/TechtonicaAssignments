@@ -41,12 +41,14 @@ function Card(props) {
   //Here i willl use setFlipped which is a function, to replace the state value which is false to true
   //When click happens, i need to tell the computer to change it from false to true
   function handleClick() {
-    setFlipped(true); // Should take a single argument, the new value that u want to replace state with
-    if (flipped === true) {
-      setFlipped(false);
-    } else {
-      setFlipped(true);
-    }
+    //first solution: (better one from Vlad)
+    setFlipped(!flipped); // Should take a single argument, the new value that u want to replace state with
+    //second solution :
+    // if (flipped === true) {
+    // setFlipped(false);
+    // } else {
+    //  setFlipped(true);
+    // }
   }
 
   return (
