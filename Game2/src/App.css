@@ -71,25 +71,25 @@
 .title-word-1 {
   --color-1: #a390b7;
   --color-2: #3D8DAE;
-  --color-3: #db78b0;
+  --color-3: #ba78db;
 }
 
 .title-word-2 {
   --color-1: #7b419f;
   --color-2: #ACCFCB;
-  --color-3: #17494D;
+  --color-3: #55a1a7;
 }
 
 .title-word-3 {
   --color-1: #ACCFCB;
-  --color-2: #E4A9A8;
+  --color-2: #bf92d1;
   --color-3: #ACCFCB;
 }
 
 .title-word-4 {
   --color-1: #3D8DAE;
   --color-2: #74a4d4;
-  --color-3: #E4A9A8;
+  --color-3: #a8e4bb;
 }
 
 @keyframes color-animation {
