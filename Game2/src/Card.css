@@ -1,0 +1,21 @@
+.carddiv{
+    
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+    padding: 15px;   
+    margin: 10px; 
+    
+}
+
+.cardcontainer{
+    width: 25%;
+    background-color: transparent;
+    appearance: none;
+    border: 0;
+    
+}
+
+.cardimage{
+    width: 100%;
+}

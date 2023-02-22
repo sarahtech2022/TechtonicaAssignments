@@ -1,0 +1,128 @@
+.App {
+  text-align: center;
+  
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+#mainAppDiv{
+  display: flex;
+  justify-content: center;
+  /* flex wrap will cause any elements inside a flexbox to wrap around rather than squich together */
+  flex-wrap: wrap;
+  /* border-left: 50px;
+  border-right: 50px; */
+}
+
+@import url(https: //fonts.googleapis.com/css2?family=Concert+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+#title{
+  display: block;
+  width: 100%;
+  margin-top: 25px;
+  margin-bottom: 1px;
+  height: 175px;
+  float:inline-end;
+  color:rgb(84, 57, 104);
+    font-family: Staatliches;
+    /* "Montserrat",sans-serif; */
+      font-weight: 800;
+      font-size: 10.5vw;
+    text-shadow: 5px 5px #9e5d9f;
+}
+
+
+
+/* Adjusting title font, credit to: https: //alvarotrigo.com/blog/css-text-animations/ */
+.title-word {
+  animation: color-animation 4s linear infinite;
+}
+
+.title-word-1 {
+  --color-1: #a390b7;
+  --color-2: #3D8DAE;
+  --color-3: #ba78db;
+}
+
+.title-word-2 {
+  --color-1: #7b419f;
+  --color-2: #ACCFCB;
+  --color-3: #55a1a7;
+}
+
+.title-word-3 {
+  --color-1: #ACCFCB;
+  --color-2: #bf92d1;
+  --color-3: #ACCFCB;
+}
+
+.title-word-4 {
+  --color-1: #3D8DAE;
+  --color-2: #74a4d4;
+  --color-3: #a8e4bb;
+}
+
+@keyframes color-animation {
+  0% {
+    color: var(--color-1)
+  }
+
+  32% {
+    color: var(--color-1)
+  }
+
+  33% {
+    color: var(--color-2)
+  }
+
+  65% {
+    color: var(--color-2)
+  }
+
+  66% {
+    color: var(--color-3)
+  }
+
+  99% {
+    color: var(--color-3)
+  }
+
+  100% {
+    color: var(--color-1)
+  }
+}
