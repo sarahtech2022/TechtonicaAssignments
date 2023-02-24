@@ -48,6 +48,7 @@ let teas = [
 
 app.get("/api/teas", (req, res) => {
   res.json(teas);
+  res.status(200).end();
 });
 
 app.post("/api/teas", (req, res) => {
@@ -61,6 +62,7 @@ app.post("/api/teas", (req, res) => {
   //   const requestBody = JSON.parse(req.body); --> this is NOT needed and causing errors
   teas.push(req.body);
   res.json(teas);
+  res.status(200).end();
 });
 
 app.delete("/api/teas/:teaId", (req, res) => {
@@ -73,11 +75,11 @@ app.delete("/api/teas/:teaId", (req, res) => {
   //delete the corresponding index from the teas array
   //slice method
 
-  teas.splice(parameter, 1);
+  teas.splice(parameter, 1); //remove that index, the second part is remove it only by 1
   // console.log(teas);
 
   res.json(teas);
-  res.status(200).end(); //close the request
+  res.status(200).end(); //close the request, to make sure the server doesnt keep thinking, optional because delete method is so fast!, so the server stops the request
 });
 
 //Now need to actually START our instance of our webserver Express
