@@ -1,6 +1,7 @@
 // Loading up express library, and cors library:
 const express = require("express");
 const cors = require("cors");
+const { response } = require("express");
 //Creating an instance of express! This will be the main instance running my webserver
 const app = express();
 
@@ -47,9 +48,18 @@ app.post("/api/teas", (req, res) => {
   res.json(teas);
 });
 
-app.delete("/api/teas", (req, res) => {
-  //Query parameter hint!!!!
+app.delete("/api/teas/:teaId", (req, res) => {
+  let parameter = req.params.teaId; //This will be a number of the index, teas at position parameter will be the tea they want to delete!
+  let toBeDeleted = teas[parameter]; //this is what they want to deleted
+  teas.slice(toBeDeleted);
+  //hint: Query parameter!
+  //URL would be: /api/teas?index=0
+  //get the value from the query parameters, then use that number to
+  //delete the corresponding index from the teas array
+  //slice method
+
   res.json(teas);
+  res.status(200).end(); //close the request
 });
 
 //Now need to actually START our instance of our webserver Express
