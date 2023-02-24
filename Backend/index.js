@@ -12,7 +12,29 @@ app.use(cors());
 // or make it easy to access or update if you need to!
 const PORT = 5000;
 
+let teas = [
+  {
+    name: "lavendar chamomile tea",
+    caffeinated: false,
+    rating: 8,
+  },
+  {
+    name: "green tea",
+    caffeinated: true,
+    rating: 9,
+  },
+];
+
+app.get("/api/teas", (req, res) => {
+  res.json(teas);
+});
+
+app.post("/api/teas", (req, res) => {
+  res.json(teas);
+});
+
 //Now need to actually START our instance of our webserver Express
 // By default ports are closed, in order to have it open,
 //you need to have something listening to it
 app.listen(PORT, () => console.log(`Hola! Server is running on PORT ${PORT}`));
+//are we listening for an HTTP request? Or should our Port be open once we set up express?
