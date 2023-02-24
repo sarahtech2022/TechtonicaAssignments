@@ -33,6 +33,10 @@ app.post("/api/teas", (req, res) => {
   res.json(teas);
 });
 
+app.delete("/api/teas", (req, res) => {
+  res.json(teas);
+});
+
 //Now need to actually START our instance of our webserver Express
 // By default ports are closed, in order to have it open,
 //you need to have something listening to it
