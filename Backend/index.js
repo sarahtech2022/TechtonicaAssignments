@@ -16,9 +16,24 @@ const PORT = 5000;
 
 let teas = [
   {
-    name: "lavendar chamomile tea",
+    name: "green tea",
     caffeinated: false,
     rating: 8,
+  },
+  {
+    name: "green tea",
+    caffeinated: true,
+    rating: 9,
+  },
+  {
+    name: "black tea",
+    caffeinated: true,
+    rating: 9,
+  },
+  {
+    name: "green tea",
+    caffeinated: true,
+    rating: 9,
   },
   {
     name: "green tea",
@@ -51,12 +66,15 @@ app.post("/api/teas", (req, res) => {
 app.delete("/api/teas/:teaId", (req, res) => {
   let parameter = req.params.teaId; //This will be a number of the index, teas at position parameter will be the tea they want to delete!
   let toBeDeleted = teas[parameter]; //this is what they want to deleted
-  teas.slice(toBeDeleted);
+  // teas.slice(toBeDeleted);
   //hint: Query parameter!
   //URL would be: /api/teas?index=0
   //get the value from the query parameters, then use that number to
   //delete the corresponding index from the teas array
   //slice method
+
+  teas.splice(parameter, 1);
+  // console.log(teas);
 
   res.json(teas);
   res.status(200).end(); //close the request
