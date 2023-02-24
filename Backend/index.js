@@ -16,27 +16,27 @@ const PORT = 5000;
 
 let teas = [
   {
-    name: "green tea",
+    name: "Chamomile & lavendar",
     caffeinated: false,
     rating: 8,
   },
   {
-    name: "green tea",
+    name: "Green tea",
     caffeinated: true,
+    rating: 8,
+  },
+  {
+    name: "Black tea",
+    caffeinated: true,
+    rating: 7,
+  },
+  {
+    name: "Celestial Seasonings Candy Cane Lane",
+    caffeinated: false,
     rating: 9,
   },
   {
-    name: "black tea",
-    caffeinated: true,
-    rating: 9,
-  },
-  {
-    name: "green tea",
-    caffeinated: true,
-    rating: 9,
-  },
-  {
-    name: "green tea",
+    name: "Sadaf Cardmom Flavor Ceylon Tea",
     caffeinated: true,
     rating: 9,
   },
