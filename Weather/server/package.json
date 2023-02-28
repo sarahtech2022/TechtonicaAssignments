@@ -4,13 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "dev": " concurrently 'npm run server' 'cd .. && cd client && npm run start' ",
     "start": "node index.js",
     "server": "nodemon index.js"
   },
   "author": "Sarah B",
   "license": "ISC",
   "dependencies": {
+    "concurrently": "^7.6.0",
     "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
     "express": "^4.18.2"
   },
   "devDependencies": {
