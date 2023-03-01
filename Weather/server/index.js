@@ -17,7 +17,15 @@ app.get("/", (req, res) => {
 // creates an endpoint for the route /api/weather
 app.get("/api/weather/", (req, res) => {
   //const //cityName is a query parameter uses ?,  route parameter uses :
-  res.json(dataWeather.weather[0].main.temp);
+  res.json({
+    name: dataWeather.weather[0].name,
+    temp: dataWeather.weather[0].main.temp,
+    pressure: dataWeather.weather[0].main.pressure,
+    clouds: dataWeather.weather[0].clouds.all,
+    wind: dataWeather.weather[0].wind.speed,
+    sunrise: dataWeather.weather[0].sys.sunrise,
+    sunset: dataWeather.weather[0].sys.sunset,
+  });
 });
 
 // console.log that your server is up and running
