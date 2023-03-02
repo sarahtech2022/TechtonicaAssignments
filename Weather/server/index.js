@@ -19,6 +19,10 @@ app.get("/api/weather/", (req, res) => {
   //const //cityName is a query parameter uses ?,  route parameter uses :
   res.json({
     name: dataWeather.weather[0].name,
+    country: dataWeather.weather[0].sys.country,
+    description: dataWeather.weather[0].description,
+    feels_like: dataWeather.weather[0].main.feels_like,
+    icon: `http://openweathermap.org/img/wn/${dataWeather.weather[0].icon}@2x.png`, // @2x makes icon two times the size, back ticks, the icon from weather app is: 04d.png but we should access it from the object in data.js
     temp: dataWeather.weather[0].main.temp,
     pressure: dataWeather.weather[0].main.pressure,
     clouds: dataWeather.weather[0].clouds.all,
