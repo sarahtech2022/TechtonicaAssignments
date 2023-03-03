@@ -8,9 +8,8 @@ const WeatherForm = (props) => {
           type="text"
           placeholder="Please enter the city name"
           name="city"
-          // value={props.city}
-          // readOnly
-          //The two lines above this make it a controlled form
+          value={props.city}
+          onChange={props.handleChangeCity}
         />
         <input type="submit" value="Submit" />
       </form>

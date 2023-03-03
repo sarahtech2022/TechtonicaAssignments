@@ -2,13 +2,13 @@
   "name": "server",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "dev": " concurrently 'npm run server' 'cd .. && cd client && npm run start' ",
-    "start": "node index.js",
-    "server": "nodemon index.js"
+    "dev": " concurrently 'npm start' 'cd .. && cd client && npm start' ",
+    "start": "nodemon server.js",
+    "server": "nodemon server.js"
   },
-  "author": "Sarah B",
+  "author": "",
   "license": "ISC",
   "dependencies": {
     "concurrently": "^7.6.0",
@@ -20,3 +20,4 @@
     "nodemon": "^2.0.20"
   }
 }
+
