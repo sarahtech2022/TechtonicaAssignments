@@ -1,22 +1,29 @@
-const WeatherForm = (props) =>{
-
-
-    return (
-        <div className="weather">
-        <h1 className="App-header">Techtonica Weather Forecast App</h1>
-        <form onSubmit={props.handleSubmit}>
+const WeatherForm = (props) => {
+  //what is inside props = {city, handleCityChange, handleSubmit}
+  return (
+    <div className="weatherFormMainDiv">
+      <div className="container">
+        <h1 className="weatherFormHeader">The Weather Forecast</h1>
+      </div>
+      <br></br>
+      <form onSubmit={props.handleSubmit}>
+        <div className="formDiv">
           <input
             id="city-name"
             type="text"
-            placeholder="Please enter the city name"
+            placeholder="Please enter your city"
             name="city"
             value={props.city}
-            readOnly
+            onChange={props.handleCityChange}
+            required // instead of readonly, change to required
+            className="searchBar"
           />
-          <input type="submit" value="Submit" />
-        </form>
-      </div>
-    )
-}
+          {/* <button type="submit" className="submitButton"></button> */}
+          <input type="submit" value="Search" className="submitButton" />
+        </div>
+      </form>
+    </div>
+  );
+};
 
 export default WeatherForm;
