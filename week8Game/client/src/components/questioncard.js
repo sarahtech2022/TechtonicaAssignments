@@ -5,8 +5,8 @@ const QuestionCard = (props) => {
   //user answer will have a value of true or false depending on lines 15 and 16, and thats because of the onclick!
   //the onclick- when the true button is clicked, we call the function compare answers, if the user clicks true the value of userAnswer is true
   const compareAnswers = (userAnswer) => {
-    setAnswer(userAnswer);
-    if (userAnswer === true) {
+  setAnswer(userAnswer);
+    if (userAnswer === ) {
       return "Your answer is correct!";
     }
   };

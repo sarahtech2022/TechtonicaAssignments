@@ -4,6 +4,8 @@ import QuestionCard from "./questioncard";
 const Game = (props) => {
   const [questions, setQuestions] = useState([]);
 
+  //questions comes as an array of objects
+  //property on it is called results
   const loadData = () => {
     fetch("http://localhost:5050/api/game")
       .then((response) => response.json())
