@@ -3,7 +3,7 @@ import QuestionCard from "./questioncard";
 
 const Game = (props) => {
   const [questions, setQuestions] = useState([]);
-
+  const [answer, setAnswer] = useState("");
   const loadData = () => {
     fetch("http://localhost:5050/api/game")
       .then((response) => response.json())
