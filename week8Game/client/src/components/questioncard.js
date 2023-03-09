@@ -8,6 +8,7 @@ const QuestionCard = (props) => {
     if (userAnswer === props.question.correct_answer) {
       setAnswer(true); //upate our answer to what they select, but its not necessairly telling us if it was right or wrong
       // to update you call it, with the new value inside
+      //This means answer now equals true
     } else {
       setAnswer(false);
     }
@@ -23,6 +24,10 @@ const QuestionCard = (props) => {
       <div className="answer-section">
         <button onClick={() => compareAnswers("True")}>True</button>
         <button onClick={() => compareAnswers("False")}>False</button>
+        {answer === "" ? null : (
+          <p>That was {answer === true ? "true" : "false"}!</p>
+        )}
+        {/* if statement should go here because we are conditionally rendering JSX (muyst use ternary operator) */}
         {/* Onclick takes on a function to call! Onclick itself is a prop for the button. onClick REQUIRES for u to give it 
         a function for IT to call, otherwise u are just calling the function manually and it returns undefined! so we need to add () => in FRONT to allow onClick to do that
         ONclick is recieving a function it can call! when it valls it- it triggers the compareAnswers function*/}
