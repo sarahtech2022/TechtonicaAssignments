@@ -10,7 +10,7 @@ const Game = (props) => {
     fetch("http://localhost:5050/api/game")
       .then((response) => response.json())
       .then((data) => {
-        console.log("This is line 11", data.results);
+        console.log("This is line 13", data.results);
         setQuestions(data.results);
       });
   };
@@ -29,6 +29,10 @@ const Game = (props) => {
       </div>
       {questions.map((question, index) => {
         return <QuestionCard key={index} question={question} />;
+        //questions is the ARRAY of questions, and question is just a single instance of one question!
+        //key is just a key identifer, key is a special prop that JSX components have
+        //key is a way to keep track of each JSX element (whenver u are inside the loop, any tag needs a key!!!! )
+        // any attribute part of a JSX component is a prop, className is a prop of div
       })}
     </div>
   );

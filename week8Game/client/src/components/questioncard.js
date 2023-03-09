@@ -5,20 +5,24 @@ const QuestionCard = (props) => {
   //user answer will have a value of true or false depending on lines 15 and 16, and thats because of the onclick!
   //the onclick- when the true button is clicked, we call the function compare answers, if the user clicks true the value of userAnswer is true
   const compareAnswers = (userAnswer) => {
-  setAnswer(userAnswer);
-    if (userAnswer === ) {
-      return "Your answer is correct!";
+    if (userAnswer === props.question.correct_answer) {
+      setAnswer(true); //upate our answer to what they select, but its not necessairly telling us if it was right or wrong
+      // to update you call it, with the new value inside
+    } else {
+      setAnswer(false);
     }
   };
-
+  //callback function to game after, to tell game component whether user got it right or wrong.
   //arrow means its an arrow function
   //anonymous function means it has no name and cant referenced, but can have an arrow
   return (
     <div className={"question-section"}>
       <div className="question-text">{props.question.question}</div>
+      {/* the first question is referencing the prop passed in from the game component,
+      the second question is the question key from the actual array of objects of questions! */}
       <div className="answer-section">
-        <button onClick={() => compareAnswers(true)}>True</button>
-        <button onClick={() => compareAnswers(false)}>False</button>
+        <button onClick={() => compareAnswers("True")}>True</button>
+        <button onClick={() => compareAnswers("False")}>False</button>
         {/* Onclick takes on a function to call! Onclick itself is a prop for the button. onClick REQUIRES for u to give it 
         a function for IT to call, otherwise u are just calling the function manually and it returns undefined! so we need to add () => in FRONT to allow onClick to do that
         ONclick is recieving a function it can call! when it valls it- it triggers the compareAnswers function*/}
