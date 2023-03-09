@@ -33,6 +33,7 @@ const Game = (props) => {
         //key is just a key identifer, key is a special prop that JSX components have
         //key is a way to keep track of each JSX element (whenver u are inside the loop, any tag needs a key!!!! )
         // any attribute part of a JSX component is a prop, className is a prop of div
+        //Q: why a return inside of a return
       })}
     </div>
   );
