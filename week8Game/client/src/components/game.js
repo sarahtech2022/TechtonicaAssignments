@@ -43,6 +43,7 @@ const Game = (props) => {
             key={index}
             question={question}
             counterFunction={updateCounter}
+            // hey counter function is going to equal this variable! updateCounter is a variable
           />
         );
         //questions is the ARRAY of questions, and question is just a single instance of one question!
