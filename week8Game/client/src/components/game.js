@@ -35,7 +35,7 @@ const Game = (props) => {
   return (
     <div className="Container">
       <div className="question-count">
-        <span className="font">Question 1/{questions.length}</span>
+        <span className="fonttop">Question 1/{questions.length}</span>
       </div>
       {questions.map((question, index) => {
         return (
@@ -52,7 +52,7 @@ const Game = (props) => {
         // any attribute part of a JSX component is a prop, className is a prop of div
         //Q: why a return inside of a return
       })}
-      <span className="font">SCORE: You got {counter}/ 10 right! </span>
+      <span className="fontbottom">SCORE: You got {counter}/ 10 right! </span>
     </div>
   );
 };
