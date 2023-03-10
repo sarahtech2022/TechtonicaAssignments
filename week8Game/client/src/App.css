@@ -79,6 +79,7 @@ input{
     font-size: large;
     color: rgb(16, 91, 91);
     text-shadow: 1px 1px 2px rgb(61, 165, 192);
+  padding-left: 20%;
 }
 
 #sendText{
