@@ -9,6 +9,9 @@
 .textHeader{
   /* align-self: center; */
   text-align: center;
+  font-size:large;
+  color: rgb(16, 91, 91);
+text-shadow: 1px 1px 2px rgb(61, 165, 192);
 }
 
 .ListMain{
@@ -45,7 +48,7 @@
   display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 55%;
+    width: 50%;
 }
 
 #sendbutton{
