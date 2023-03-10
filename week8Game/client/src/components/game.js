@@ -23,7 +23,14 @@ const Game = (props) => {
   }, []);
   //Want to notify the parent on if the user got it right or wrong!
   //Pass the function as a prop from PARENT to child, then the child can give it back
-  const updateCounter = (correctQuestion) => {};
+  //updateCounter and counterFunction are essentially the same thing but in diff components, both want to update the counter
+  //updateCounter will be called from inisde question card (thats what props.couunderFunction) and it will be given data that is true or false from question card, which triggers it to run
+  //onlu need to reference it as a prop if in child component!!!
+  const updateCounter = (gotCorrectAnswer) => {
+    if (gotCorrectAnswer === true) {
+      setCounter(counter + 1);
+    }
+  };
 
   return (
     <div className="Container">
@@ -44,6 +51,7 @@ const Game = (props) => {
         // any attribute part of a JSX component is a prop, className is a prop of div
         //Q: why a return inside of a return
       })}
+      <p>You got {counter}/ 10 right! </p>
     </div>
   );
 };
