@@ -1,5 +1,5 @@
 .App {
-  background-color: #c1deea;
+  background-color: #bbd9e6;
   font-family: "Raleway", sans-serif;
   display:flex; 
   flex-direction:column; 
@@ -11,7 +11,7 @@
   text-align: center;
   font-size:large;
   color: rgb(16, 91, 91);
-text-shadow: 1px 1px 2px rgb(61, 165, 192);
+    text-shadow: 2px 2px 2px rgb(61, 165, 192);
 }
 
 .ListMain{
@@ -65,7 +65,8 @@ text-shadow: 1px 1px 2px rgb(61, 165, 192);
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
-    background-color: #bacdd8;
+    background-color: #add5cd;
+    border-radius: 20px;
 }
 
 input{
