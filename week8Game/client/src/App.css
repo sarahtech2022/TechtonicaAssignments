@@ -50,4 +50,17 @@
 
 #sendbutton{
   background-color: #90b6cd;
+  
+}
+
+#form{
+  width: 120%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    background-color: #bacdd8;
+}
+
+input{
+  width: 75%;
 }

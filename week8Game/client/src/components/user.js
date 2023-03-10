@@ -14,7 +14,7 @@ const UserForm = (props) => {
   return (
     <div className="ListMain">
       <div className="header">
-        <form onSubmit={handleSubmit}>
+        <form id="form" onSubmit={handleSubmit}>
           <input
             type="text"
             placeholder="Please enter your name"

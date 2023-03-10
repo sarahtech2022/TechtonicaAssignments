@@ -1,6 +1,6 @@
 
 .green{
-    background-color: rgb(49, 163, 49);
+    background-color: rgb(150, 216, 150);
     
         /* Add border */
         border: 1px solid #bacdd8;
@@ -15,7 +15,7 @@
     }
 
 .red {
-            background-color: rgb(189, 61, 61);
+            background-color: rgb(199, 56, 56);
     
             /* Add border */
             border: 1px solid #bacdd8;
