@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 import QuestionCard from "./questioncard";
-
+//props coming in from APP to game
 const Game = (props) => {
   const [questions, setQuestions] = useState([]);
-
+  const [counter, setCounter] = useState(0);
   //questions comes as an array of objects
   //property on it is called results
   const loadData = () => {
@@ -21,6 +21,9 @@ const Game = (props) => {
   useEffect(() => {
     loadData();
   }, []);
+  //Want to notify the parent on if the user got it right or wrong!
+  //Pass the function as a prop from PARENT to child, then the child can give it back
+  const updateCounter = (correctQuestion) => {};
 
   return (
     <div className="Container">
@@ -28,7 +31,13 @@ const Game = (props) => {
         <span>Question 1</span>/{questions.length}
       </div>
       {questions.map((question, index) => {
-        return <QuestionCard key={index} question={question} />;
+        return (
+          <QuestionCard
+            key={index}
+            question={question}
+            counterFunction={updateCounter}
+          />
+        );
         //questions is the ARRAY of questions, and question is just a single instance of one question!
         //key is just a key identifer, key is a special prop that JSX components have
         //key is a way to keep track of each JSX element (whenver u are inside the loop, any tag needs a key!!!! )
