@@ -1,0 +1,97 @@
+.App {
+  background-color: #bbd9e6;
+  font-family: "Raleway", sans-serif;
+  display:flex; 
+  flex-direction:column; 
+  justify-content:center;
+}
+
+.textHeader{
+  /* align-self: center; */
+  text-align: center;
+  font-size:large;
+  color: rgb(16, 91, 91);
+    text-shadow: 2px 2px 2px rgb(61, 165, 192);
+}
+
+.ListMain{
+  align-self: center;
+}
+
+.question-count{
+  margin-top: 25px;
+}
+
+.Container {
+  display: table-cell;
+  /* vertical-align: middle; */
+  /* align-self: center; */
+  display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    padding-left: 20%;
+}
+
+.question-section{
+  /* Change background color */
+  background-color: white;
+
+  /* Add border */
+  border: 1px solid #bacdd8;
+
+  /* Add space between the border and the content */
+  padding: 8px;
+
+  border-radius: 12px;
+
+  width: 70%;
+
+}
+
+#image{
+  display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+#sendbutton{
+  background-color: #90b6cd;
+  
+}
+
+#form{
+  width: 120%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    background-color: rgb(129, 167, 198);
+    border-radius: 20px;
+}
+
+input{
+  width: 75%;
+}
+
+.fonttop{
+  text-align: center;
+    font-size: large;
+    color: rgb(16, 91, 91);
+    text-shadow: 1px 1px 2px rgb(61, 165, 192);
+  padding-left: 20%;
+}
+
+.fontbottom {
+  text-align: center;
+  font-size: large;
+  color: rgb(16, 91, 91);
+  text-shadow: 1px 1px 2px rgb(61, 165, 192);
+  padding-left: 10%;
+}
+
+#sendText{
+  color: rgb(7, 39, 66);
+  text-shadow: 1px 1px 2px rgb(61, 165, 192);
+  font-weight: bold;
+}
